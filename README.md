@@ -2,11 +2,13 @@
 <br/>
 <div align="center">
   
-![Screenshot 2024-09-21 113615](https://github.com/user-attachments/assets/26190037-992a-4763-9089-a11d259a7683)
+<img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" alt="Logo" width="80" height="80">
+
+
 
 <h3 align="center">DBMS-website</h3>
 <p align="center">
-This is a project about open to DBMS Website that is made by my team from Thakur college of engineering computer department  
+This is a project about open to DBMS Website that is made by my team from Thakur College of Engineering Computer Department  
 
 
   
@@ -16,7 +18,8 @@ This is a project about open to DBMS Website that is made by my team from Thakur
 </div>
 
 ## About The Project
-![Screenshot 2024-09-21 140414](https://github.com/user-attachments/assets/45cc8afc-dd4e-4832-b605-e1bb65891d92)
+![image](https://github.com/user-attachments/assets/73f249e6-7309-4398-a6a6-ebc9366c5744)
+
 <br>
 This project is made in reference Database management system in Computer science engineering . This project is all about helping students understand about DBMS and learn from all the resources available in this project . 
 
@@ -68,7 +71,8 @@ Start the server
 ## Block-Diagram
 
 Below is the Block-diagram for the project explaining the details and simple workflow of our project : 
-![image](https://github.com/user-attachments/assets/dc1fc47d-4d64-42a1-a9f6-360f98233b52)
+![image](https://github.com/user-attachments/assets/8419a96b-47d7-4680-95ac-8745fb34e8b1)
+
 
 
 ## Usage
