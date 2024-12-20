@@ -10,5 +10,11 @@ urlpatterns = [
     path("Practicals/",views.Practicals,name="Modules"),
     path("trial/",views.trail,name="Test"),
     path("PYQS/",views.PYQ,name="PYQ"),
+    path('adminpanel/',views.admin,name='admin'),
+    path('update/<int:id>/',views.update,name="Update"),
+    path('delete/<int:id>/',views.delete_file,name="Delete"),
+    path("create/",views.create_file,name="Create"),
+    path("logout/",views.logout_user,name="logout"),
+    path("login/",views.login_user,name="login"),
     path('download/<int:id>/',views.download_file, name='download_file'),
 ]

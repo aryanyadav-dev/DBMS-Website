@@ -1,0 +1,115 @@
+{% extends 'Basic.html' %}
+
+{% block title %} Update File {% endblock %}
+
+{% block section %}
+<div class="padding-global">
+    <div class="w-layout-blockcontainer container w-container">
+        <div class="padding-section-large">
+            <div class="faqs-title-wrapper">
+                <h2 class="heading-style-h1">Update File</h2>
+                <p class="text-size-regular">Modify the details of the selected file below.</p>
+            </div>
+            <form method="POST" action="{% url 'Update' file.id %}" enctype="multipart/form-data" class="update-form">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="title">File Title:</label>
+                    <input type="text" id="title" name="title" value="{{ file.title }}" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">File Description:</label>
+                    <textarea id="description" name="description" class="form-textarea" required>{{ file.disc }}</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <input type="text" id="category" name="category" value="{{ file.category }}" class="form-input" placeholder="Enter category" required>
+                </div>
+                <div class="form-group">
+                    <label for="file">Upload New File :</label>
+                    <input type="file" id="file" name="file" class="form-input" >
+                    <p>Current file: <strong>{{ file.file }}</strong></p>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="update-button">Update File</button>
+                    <a href="{% url 'admin' %}" class="cancel-button">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .update-form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .form-input, .form-textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        color: Black;
+    }
+
+    .form-textarea {
+        height: 100px;
+        resize: vertical;
+    }
+
+    .form-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .update-button {
+        border: 1px solid green;
+        color: green;
+        background-color: transparent;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.5s;
+    }
+
+    .update-button:hover {
+        background-color: green;
+        color: white;
+    }
+
+    .cancel-button {
+        text-decoration: none;
+        color: red;
+        border: 1px solid red;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.5s;
+    }
+
+    .cancel-button:hover {
+        background-color: red;
+        color: white;
+    }
+
+    p{
+        color: black;
+    }
+</style>
+{% endblock %}
