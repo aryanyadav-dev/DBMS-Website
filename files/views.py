@@ -115,7 +115,6 @@ def login_user(request):
         username_user = str(request.POST['Name'])
         password_user = str(request.POST['password'])
         user = authenticate(username=username_user,password=password_user)
-        print(user)
         if user :
             login(request,user)
             return redirect('admin')
